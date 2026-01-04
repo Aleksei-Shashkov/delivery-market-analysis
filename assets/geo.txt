@@ -1,0 +1,45 @@
+UPDATE locations
+SET 
+    latitude = CASE 
+        WHEN city = 'Antwerpen' AND street LIKE 'Abdijstraat 212%' THEN 51.18954
+        WHEN city = 'Sint-Niklaas' AND street LIKE 'Plezantstraat 40A%' THEN 51.16825
+        WHEN city = 'Middelkerke' AND street LIKE 'Zeedijk 78%' THEN 51.18841
+        WHEN city = 'Hasselt' AND street LIKE 'Sint-Truidersteenweg 46%' THEN 50.92215
+        WHEN city = 'Genk' AND street LIKE 'Hoogstraat 33%' THEN 50.96541
+        WHEN city = 'Laeken' AND street LIKE 'Avenue Houba de Strooper 765%' THEN 50.89234
+        WHEN city = 'Heusden-Zolder' AND street LIKE 'Ringlaan 25%' THEN 51.02221
+        WHEN city = 'Vilvoorde' AND street LIKE 'Guldenschaapstraat 38%' THEN 50.92842
+        WHEN city = 'Boom' AND street LIKE 'blauwstraat bus 1 29%' THEN 51.08745
+        WHEN city = 'Zelzate' AND street LIKE 'Grote Markt 98%' THEN 51.20163
+        WHEN city = 'Sint-Niklaas' AND street LIKE 'Vijfstraten 66%' THEN 51.17412
+        WHEN city = 'Jodoigne' AND street LIKE 'Rue du Bosquet 13%' THEN 50.72314
+        WHEN city = 'Bree' AND street LIKE 'Rode Kruislaan 28%' THEN 51.14151
+        WHEN city = 'Laeken' AND street LIKE 'Boulevard Emile Bockstael 199%' THEN 50.88567
+        WHEN city = 'Forest' AND street LIKE 'Avenue Wilemans Ceuppens 122%' THEN 50.81123
+        WHEN city = 'Maasmechelen' AND street LIKE 'Oude Baan 54%' THEN 50.96342
+        WHEN city = 'Dendermonde' AND street LIKE 'Kerkstraat 76%' THEN 51.02891
+        WHEN city = 'Molenbeek' AND street LIKE 'Chaussée de Gand 212%' THEN 50.85432
+        ELSE latitude 
+    END,
+    longitude = CASE 
+        WHEN city = 'Antwerpen' AND street LIKE 'Abdijstraat 212%' THEN 4.38031
+        WHEN city = 'Sint-Niklaas' AND street LIKE 'Plezantstraat 40A%' THEN 4.14372
+        WHEN city = 'Middelkerke' AND street LIKE 'Zeedijk 78%' THEN 2.81235
+        WHEN city = 'Hasselt' AND street LIKE 'Sint-Truidersteenweg 46%' THEN 5.32356
+        WHEN city = 'Genk' AND street LIKE 'Hoogstraat 33%' THEN 5.50153
+        WHEN city = 'Laeken' AND street LIKE 'Avenue Houba de Strooper 765%' THEN 4.34125
+        WHEN city = 'Heusden-Zolder' AND street LIKE 'Ringlaan 25%' THEN 5.27542
+        WHEN city = 'Vilvoorde' AND street LIKE 'Guldenschaapstraat 38%' THEN 4.42513
+        WHEN city = 'Boom' AND street LIKE 'blauwstraat bus 1 29%' THEN 4.36421
+        WHEN city = 'Zelzate' AND street LIKE 'Grote Markt 98%' THEN 3.81124
+        WHEN city = 'Sint-Niklaas' AND street LIKE 'Vijfstraten 66%' THEN 4.15632
+        WHEN city = 'Jodoigne' AND street LIKE 'Rue du Bosquet 13%' THEN 4.87231
+        WHEN city = 'Bree' AND street LIKE 'Rode Kruislaan 28%' THEN 5.59124
+        WHEN city = 'Laeken' AND street LIKE 'Boulevard Emile Bockstael 199%' THEN 4.35412
+        WHEN city = 'Forest' AND street LIKE 'Avenue Wilemans Ceuppens 122%' THEN 4.32145
+        WHEN city = 'Maasmechelen' AND street LIKE 'Oude Baan 54%' THEN 5.68412
+        WHEN city = 'Dendermonde' AND street LIKE 'Kerkstraat 76%' THEN 4.10234
+        WHEN city = 'Molenbeek' AND street LIKE 'Chaussée de Gand 212%' THEN 4.31234
+        ELSE longitude 
+    END
+WHERE (latitude IS NULL OR latitude = 0);
