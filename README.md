@@ -1,110 +1,64 @@
-# Delivery Market Analysis
+# 🛵 Delivery Market Analysis (Belgium)
+**Data-Driven Logistics & Pricing Insights using SQL & Python**
 
-- Repository: `delivery-market-analysis`
-- Duration: `4 days`
-- Deadline: `02/01/2026 at 4PM`
-- Team: `Solo or Team` 
+**Repository:** `delivery-market-analysis`  
+**Duration:** 4 days  
+**Deadline:** 02/01/2026 at 4PM  
+**Team:** Solo 
 
-## Mission Objectives
-
-Enhance your data engineering and analytical skills by:
-- Working with SQL operations like:
-  - SELECT
-  - JOIN
-  - GROUP BY
-  - Aggregations (e.g., average, sum)
-  - Advanced queries
-- Or working with PowerBI
-- Exploring geospatial data analysis
-- Extracting and visualizing insights from food delivery datasets
-- Building data storytelling and presentation skills
-
-## Learning Objectives
-
-- Understand and query SQL database structures
-- Optimize SQL queries for performance
-- Visualize data insights using Python or PowerBI
-- Deliver impactful presentations with data-driven narratives
-
-## The Mission
-
-> We are analyzing Delivery data to uncover actionable insights for restaurant partners and consumers. The objective is to explore trends, customer preferences, and market dynamics in the food delivery space.
-
-Conduct exploratory analysis, summarize findings, and present actionable insights.
-
-![delivery_gif](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjJhYzh1YmJlMHZ4bDh3dTIzeTVlNWo3cGZ6MWR0dDFyMGpienFxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RfkPHw5r2Bnisqo258/giphy.gif)
-
-## Data
-The database provided is structured as three SQLite files:
-
-Start with the **Takeaway Database**, optionally, you can also work with the **Uber Eats Database** or **Deliveroo Database**.
-
-### Database Schema
-
-Refer to the database diagram for the schema. Use SQL queries to explore relationships between tables and derive insights.
-
-
-## Must-have Features
-
-Answer these key business questions:
-1. What is the price distribution of menu items?
-2. What is the distribution of restaurants per location?
-3. Which are the top 10 pizza restaurants by rating?
-4. Map locations offering kapsalons (or your favorite dish) and their average price.
-
-Also answer these more open ended questions:
-
-1. Which restaurants have the best price-to-rating ratio?
-2. Where are the delivery ‘dead zones’—areas with minimal restaurant coverage?
-3. How does the availability of vegetarian and vegan dishes vary by area?
-4. Identify the **World Hummus Order (WHO)**; top 3 hummus serving restaurants.
-
-Come up with at least 2 original questions!
-
-## Nice-to-have Features
-
-- Optimize SQL queries for speed and readability
-- Suggest database schema improvements
-- Add custom exploratory insights:
-  - Compare cuisines' average ratings across platforms
-  - Map high-density restaurant zones
-  - Identify cuisine trends in different regions
-- Visualize overlap of restaurant categories on different platforms
-- Answer some questions across platforms:
-  1. How do delivery fees vary across platforms and locations?
-  2. How do ratings of similar restaurants differ across Uber Eats, Deliveroo, and Takeaway?
-
-## Deliverables
-
-1. **GitHub Repository:** Include all source code.
-2. **Presentation:** Summarize findings in an engaging format (PDF or other).
-3. On Friday, we will present 5-6 project! Each presenter will answer "Tell me about an project you've worked on", as if they were explaining it in an interview, using the [STAR method](https://resources.biginterview.com/behavioral-interviews/star-interview-method/). 
-
-## Steps
-
-1. Create the repository
-2. Study the brief: Who? Why? What?
-3. Identify technical challenges: How?
-4. Explore and understand the dataset
-5. Write and optimize SQL queries
-6. Create visuals for each key question
-7. Finalize and present results
+## 📌 Project Overview
+The primary objective of this project was to master **SQL querying** by analyzing a real-world dataset from the Belgian food delivery market (`takeaway.db`). The project evaluates restaurant performance, menu pricing strategies, and geographical delivery gaps to provide actionable business intelligence.
 
 ---
 
-## Evaluation
+## 🎯 Executive Summary (STAR Method)
 
-| Criterion      | Indicator                                              | Yes/No |
-| -------------- | ------------------------------------------------------ | ------ |
-| **Completion** | Each must-have question is answered                    |        |
-|                | Queries and visualizations are included                |        |
-| **Excellence** | SQL queries are efficient and documented               |    
- ||PowerBI report looks professional  and respects storytelling narrative             |      |
-|                | Code follows best practices                            |        |
-|                | Presentation is clear and compelling                   |        |
+* **Situation:** The food delivery market in Belgium is highly competitive, yet data on restaurant density, pricing distribution, and delivery efficiency was fragmented and raw.
+* **Task:** Clean, query, and analyze the `takeaway.db` database to identify market trends, pricing benchmarks, and underserved "dead zones" for logistics optimization.
+* **Action:** * Authored complex **SQL queries** (Joins, CTEs, Aggregations) to extract insights.
+    * Utilized **Python (Pandas, Matplotlib)** for data visualization.
+    * Developed **Geospatial Maps (Folium)** to visualize restaurant coverage and delivery fees.
+* **Result:** Derived strategic insights including a custom "True Value" metric and identified 3 key regions with low competition for expansion.
 
 ---
 
-Happy analyzing! Let the data drive your insights.
+## 📁 Repository Structure
+```bash
+delivery-market-analysis/
+│
+├─ data/
+│  └─ takeaway.db           # SQLite database (Restaurants, Menus, Locations)
+│
+├─ docs/
+│  ├─ schema_notes.md       # Database schema
+│  └─ maps/
+│     ├─ maps.html  # Interactive Folium map (Download to view)
+│     └─ maps.pdf   # Static version of the analysis map
+│
+├─ sql/questions/
+│  └─ *.ipynb               # Jupyter notebooks with SQL queries & analysis
+│
+├─ presentation/
+│  └─ Delivery-Market-Analysis.pdf  # Project summary and slide deck
+│
+└─ README.md                # Project overview and instructions
 
-![doggo gif](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDJlOTZiMjFrcmdqZGxqcGk0aXQ1Z3B3ZTB2dDQybzBjeGk5dXJwMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oOOeOODsCmAPC/giphy.gif)
+
+## 📊 Key Analytics & SQL Insights
+
+| Objective | Key Insight |
+| :--- | :--- |
+| **Q1: Price Distribution** | 85% of menu items are under 20€, showing a market dominated by high-volume, affordable options. |
+| **Q2: Restaurant Density** | Delivery infrastructure is hyper-concentrated in **Antwerpen, Gent, and Bruxelles**|
+| **Q3: Price-to-Rating Ratio** | High ratings are not tied to high prices; casual eateries often outperform luxury restaurants in value-for-money. |
+| **Original Q1: True Value Metric** | Fast delivery and low fees drive customer satisfaction more than high ratings alone. |
+
+---
+
+## 🛠️ Tech Stack & Methods
+* **Core Language:** SQL (SQLite) - Focus on complex joins and window functions.
+* **Data Manipulation:** Python (Pandas, NumPy).
+* **Visualization:** Matplotlib, Seaborn.
+* **Mapping:** Folium for interactive heatmaps.
+
+---
