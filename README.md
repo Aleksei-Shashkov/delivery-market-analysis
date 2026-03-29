@@ -47,17 +47,16 @@ delivery-market-analysis/
 
 | Objective | Key Insight |
 | :--- | :--- |
-| **Original Q1: True Value Metric** | Fast delivery and low fees drive customer satisfaction more than high ratings alone. |
-| **Q1: Price Distribution	** |85% of menu items are priced under 20€, indicating a market dominated by high-volume, affordable dining options. |
-| **Q2: Restaurant Density	** |Delivery infrastructure is hyper-concentrated in Antwerpen, Gent, and Bruxelles, which host the majority of active platforms. |
-| **Q3: Rating vs. Volume	** |There is no strong correlation between high ratings and order volume; top-rated venues often have fewer reviews than mid-tier chains. |
-| **Q4: Cuisine Popularity	** |Pizza, Burgers, and Thai cuisines lead the market in terms of both availability and frequency of orders across all major cities. |
-| **Q5: Delivery Fees	** |Average delivery fees hover around 2.50€ - 3.50€, with a growing trend toward "Free Delivery" for orders exceeding 25€. |
-| **Q6: Peak Order Times	** |Demand peaks significantly between 18:00 and 20:00, with Friday and Saturday nights accounting for 40% of weekly volume. |
-| **Q7: Market Leaders	** |Three major platforms control over 90% of the market share, creating high barriers to entry for new delivery startups. |
-| **Q8: Item Variety	** |Large chains offer 3x more menu customizations (add-ons) compared to local independent restaurants, driving higher average check sizes. |
-| **Q9: Geographic Reach	** |Suburban areas remain underserved, with average delivery times 15-20 minutes longer than in city centers. |
-| **Q10: Customer Loyalty	** |Repeat customers contribute to 65% of total revenue, highlighting the importance of in-app loyalty programs and discounts. |
+| **Q1: Price Distribution** |85% of menu items are priced under 20€, indicating a market dominated by high-volume, affordable dining options. |
+| **Q2: Restaurant Density** |Delivery infrastructure is hyper-concentrated in Antwerpen, Gent, and Bruxelles, which host the majority of active platforms. |
+| **Q3: Rating vs. Volume** |There is no strong correlation between high ratings and order volume; top-rated venues often have fewer reviews than mid-tier chains. |
+| **Q4: Cuisine Popularity** |Pizza, Burgers, and Thai cuisines lead the market in terms of both availability and frequency of orders across all major cities. |
+| **Q5: Delivery Fees** |Average delivery fees hover around 2.50€ - 3.50€, with a growing trend toward "Free Delivery" for orders exceeding 25€. |
+| **Q6: Peak Order Times** |Demand peaks significantly between 18:00 and 20:00, with Friday and Saturday nights accounting for 40% of weekly volume. |
+| **Q7: Market Leaders** |Three major platforms control over 90% of the market share, creating high barriers to entry for new delivery startups. |
+| **Q8: Item Variety** |Large chains offer 3x more menu customizations (add-ons) compared to local independent restaurants, driving higher average check sizes. |
+| **Q9: Geographic Reach** |Suburban areas remain underserved, with average delivery times 15-20 minutes longer than in city centers. |
+| **Q10: Customer Loyalty** |Repeat customers contribute to 65% of total revenue, highlighting the importance of in-app loyalty programs and discounts. |
 ---
 
 ## 🛠️ Tech Stack & Methods
@@ -68,5 +67,5 @@ delivery-market-analysis/
 
 ---
 ## 📌 Personal context note
-This project was done as part of the AI & Data Science Bootcamp at BeCode (Ghent), class of 2025-2026. 
+This project was done as part of the AI & Data Science Bootcamp at BeCode (Ghent), class of 2025-2026.
 Feel free to reach out or connect with me on [LinkedIn](https://www.linkedin.com/in/shashkov-aleksei/)!
