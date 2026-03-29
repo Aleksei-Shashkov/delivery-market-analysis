@@ -27,21 +27,21 @@ The primary objective of this project was to master **SQL querying** by analyzin
 ## 📁 Repository Structure
 ```bash
 delivery-market-analysis/
-|
 ├── archive/                    # Archived files and old versions
 ├── assets/                     # Images, icons, and static assets for the project
 ├─ data/
 │  └─ takeaway.db               # SQLite database (Restaurants, Menus, Locations)
-│  └─ ER_schema_takeaway.png    # R_schema_takeaw
+│  └─ ER_schema_takeaway.png    # R_schema_takeaway
 │  └─ tables                    # Excel-tables (from takeaway.db)
 ├── graphs/                     # Exported visualizations and plots (from data-analysis in python)
 ├── maps/                       # Exported maps (from data-analysis in python)
-|
 ├── Power_BI_Analysis           # Power BI dashboard files (an alternative analytics option in Power BI)
 ├── Presentation                # Project summary and slide deck (Word)
 ├── Queries_1-5                 # Jupyter notebooks with SQL queries & analysis (1-5 queries)
 ├── Queries_6-10                # Jupyter notebooks with SQL queries & analysis (6-10 queries)
 └── README                      # Project overview and instructions
+```
+---
 
 ## 📊 Key Analytics & SQL Insights
 
